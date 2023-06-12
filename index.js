@@ -25,6 +25,6 @@ app.use('/api/auth', require('./routes/auth'))
 app.use('/api/events', require('./routes/events'))
 
 //Escuchar peticiones
-app.listen(4000, () => {
+app.listen(process.env.PORT, () => {
     console.log(`Servidor corriendo en puerto ${process.env.PORT}`)
 })
